@@ -48,4 +48,10 @@ Route::group(['middleware' => ['auth', 'user']], function () {
 });
 
 
+    Route::resource('roles','ACL\RoleController');
+    Route::resource('usersss','ACL\UserController');
+    Route::resource('products','ACL\ProductController');
+
+
+
  
